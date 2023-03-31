@@ -1,6 +1,9 @@
-const router = require('express').Router();
-const User = require('./user.model');
-const usersService = require('./user.service');
+import { Router } from 'express';
+
+import User from './user.model.js';
+import * as usersService from './user.service.js';
+
+const router = Router();
 
 router.route('/').get(async (req, res) => {
   const users = await usersService.getAll();
@@ -8,4 +11,4 @@ router.route('/').get(async (req, res) => {
   res.json(users.map(User.toResponse));
 });
 
-module.exports = router;
+export default router;

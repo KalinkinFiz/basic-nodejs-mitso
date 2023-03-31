@@ -1,5 +1,5 @@
-const usersRepo = require('./user.memory.repository');
+import * as usersRepo from './user.memory.repository.js';
 
 const getAll = () => usersRepo.getAll();
 
-module.exports = { getAll };
+export { getAll };

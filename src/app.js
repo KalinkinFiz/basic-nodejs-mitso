@@ -1,5 +1,6 @@
-const express = require('express');
-const userRouter = require('./resources/users/user.router');
+import express from 'express';
+
+import userRouter from './resources/users/user.router.js';
 
 const app = express();
 
@@ -15,4 +16,4 @@ app.use('/', (req, res, next) => {
 
 app.use('/users', userRouter);
 
-module.exports = app;
+export default app;
