@@ -1,10 +1,9 @@
 {
-  "tabWidth": 2,
+  "endOfLine": "auto",
   "semi": true,
   "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
   "printWidth": 100,
-  "proseWrap": "always",
-  "useTabs": false,
-  "trailingComma": "all",
-  "bracketSpacing": true
+  "arrowParens": "always"
 }
